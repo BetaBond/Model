@@ -1,10 +1,10 @@
 {
-	"name": "colorful/preacher",
+	"name": "colorful/model",
 	"description": "Business tool library",
 	"license": "mit",
 	"autoload": {
 		"psr-4": {
-			"Colorful\\Preacher\\": "src/"
+			"Colorful\\Model\\": "src/"
 		}
 	},
 	"authors": [
