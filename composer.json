@@ -15,7 +15,7 @@
 	],
 	"require": {
 		"php": "^8.0.2",
-		"illuminate/database": "^9.0"
+		"illuminate/database": "v9.52.8"
 	},
 	"config": {
 		"sort-packages": true,
