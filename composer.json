@@ -15,7 +15,7 @@
 	],
 	"require": {
 		"php": "^8.0.2",
-		"illuminate/database": "^9"
+		"laravel/framework": "^9.19"
 	},
 	"config": {
 		"sort-packages": true,
