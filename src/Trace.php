@@ -9,7 +9,7 @@ use ReflectionClass;
  *
  * @author beta
  */
-abstract class Trace
+class Trace
 {
     
     /**
@@ -17,21 +17,14 @@ abstract class Trace
      *
      * @var string
      */
-    const TABLE = 'table';
+    const TABLE = '';
     
     /**
-     * ID 名称
+     * ID
      *
      * @var string
      */
     const ID = 'id';
-    
-    /**
-     * 更新时间
-     *
-     * @var string
-     */
-    const UPDATED_AT = 'updated_at';
     
     /**
      * 创建时间
@@ -39,6 +32,13 @@ abstract class Trace
      * @var string
      */
     const CREATED_AT = 'created_at';
+    
+    /**
+     * 更新时间
+     *
+     * @var string
+     */
+    const UPDATED_AT = 'updated_at';
     
     /**
      * 隐藏列
@@ -52,7 +52,7 @@ abstract class Trace
      *
      * @return array
      */
-    private static function getConstants(): array
+    public static function getConstants(): array
     {
         return (new ReflectionClass(get_called_class()))
             ->getConstants();
